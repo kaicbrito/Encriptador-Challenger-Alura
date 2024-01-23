@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Encriptador - Projecto Alura</title>
+</head>
+
+
+<body>
+<header class="header">
+    <div class="header__logo">
+        <img class="logo" src="./assets/logo.svg" alt="Logo de Alura">
+    </div>
+</header>
+
+<div class="container">
+    <div class="form_container">
+        <div class="form">
+            <div class="form__input">
+                <textarea name="texto" id="texto" placeholder="Insira seu texto aqui"></textarea>
+            </div>
+
+            <div class="form_bottom_container">
+                <div class="instructions">
+                    <img class="instructions__icon" src="./assets/alerta.svg" alt="icone">
+                    <p class="instructions__text">Apenas letras minúsculas e sem acentos</p>
+                </div>
+                <div class="form__buttons">
+                    <button class="button button--dark" onclick="actionEncript()">Encriptar</button>
+                    <button class="button button--light" onclick="actionDesencript()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="aside">
+        <div id="without-text" class="encoded-container hide">
+            <p id="encoded" class="encode-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur cupiditate deserunt ea eaque enim id iusto, libero nam placeat possimus, quis reiciendis reprehenderit vero voluptatum! Dolore magni rem similique?</p>
+            <div class="button-container" onclick="copyText()">
+                <button class="button button--light">Copiar texto</button>
+            </div>
+        </div>
+
+        <div id="default" class="aside-default">
+            <img class="aside_image" src="./assets/woman.svg" alt="Logo mulher">
+
+            <div class="aside_paragraph_container">
+                <p class="paragraph--primary">Nenhuma mensagem foi encontrada</p>
+                <p class="paragraph--secondary">Digite o texto que deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+    </aside>
+</div>
+
+</body>
+
+<script src="script/main.js"></script>
+</html>
